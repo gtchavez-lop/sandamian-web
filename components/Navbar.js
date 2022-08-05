@@ -26,7 +26,9 @@ const Navbar = () => {
       >
         <div className="navbar gap-2 justify-between w-full max-w-5xl ">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-pink-500 rounded-full"></div>
+            <div className="w-10 h-10 bg-pink-500 rounded-full overflow-hidden">
+              <img src={'./logo.png'} />
+            </div>
             <p className="text-xl font-semibold select-none cursor-pointer hidden md:block">
               San Damian Center
             </p>
