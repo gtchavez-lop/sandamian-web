@@ -1,7 +1,20 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
-export default MyApp
+const RootApp = ({ Component, pageProps }) => {
+  return (
+    <>
+      <Navbar />
+      <div className="flex justify-center">
+        <div className="w-full max-w-5xl px-5 lg:px-0">
+          <Component {...pageProps} />
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
+};
+
+export default RootApp;
